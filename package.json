@@ -1,0 +1,23 @@
+{
+  "name": "reading_list",
+  "version": "1.0.0",
+  "description": "8th Light Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevKodes/eigthLight-readingList.git"
+  },
+  "keywords": [
+    "Google",
+    "reading"
+  ],
+  "author": "Kevin Pitzer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevKodes/eigthLight-readingList/issues"
+  },
+  "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme"
+}

@@ -1,6 +1,8 @@
 # Reading List 
 ## Command Line App - Kevin Pitzer
 
+### Instructions
+run with: ```node reading_list.js```
 
 ### Application Objectives
 - Type in a query and display a list of 5 books matching that query.
