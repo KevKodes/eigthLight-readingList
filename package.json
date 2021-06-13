@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "8th Light Coding Challenge",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,8 +17,14 @@
   ],
   "author": "Kevin Pitzer",
   "license": "ISC",
+  "bin": {
+    "my-library": "./bin/index.js"
+  },
   "bugs": {
     "url": "https://github.com/KevKodes/eigthLight-readingList/issues"
   },
-  "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme"
+  "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
