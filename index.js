@@ -1,4 +1,4 @@
-import searchCmd from './commands/search';
+import searchCmd from './commands/search.js';
 
 const libraryDirectory = () => {
   const myArgs = process.argv.slice(2);

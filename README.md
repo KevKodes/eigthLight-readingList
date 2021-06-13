@@ -2,7 +2,11 @@
 ## Command Line App - Kevin Pitzer
 
 ### Instructions
-run with: ```node reading_list.js```
+How to run:
+- clone this repo
+- go into the reading_list directory: ```cd reading_list```
+- ```npm install -g .```
+- ```my-library```
 
 ### Application Objectives
 - Type in a query and display a list of 5 books matching that query.
