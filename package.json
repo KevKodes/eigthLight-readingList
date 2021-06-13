@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme",
   "dependencies": {
-    
+    "axios": "^0.21.1"
   }
 }
