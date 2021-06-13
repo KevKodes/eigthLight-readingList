@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/KevKodes/eigthLight-readingList/issues"
   },
-  "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme"
+  "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme",
+  "dependencies": {
+    "prompt": "^1.1.0"
+  }
 }
