@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme",
   "dependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.5",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
     "prompt": "^1.1.0"
   }
 }
