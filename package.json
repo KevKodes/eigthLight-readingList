@@ -16,6 +16,9 @@
   ],
   "author": "Kevin Pitzer",
   "license": "ISC",
+  "bin": {
+    "my-library": "./bin/index.js"
+  },
   "bugs": {
     "url": "https://github.com/KevKodes/eigthLight-readingList/issues"
   },
