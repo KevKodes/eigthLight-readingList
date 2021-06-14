@@ -1,4 +1,5 @@
 import searchCmd from "./commands/search.js";
+import saveCmd from "./commands/save.js";
 
 const libraryDirectory = () => {
   const myArgs = process.argv.slice(2);
@@ -11,6 +12,11 @@ const libraryDirectory = () => {
       const keyword = myArgs[1];
       console.log("Searching library for keyword: ", keyword);
       searchCmd(keyword);
+      break;
+    case "save":
+      const id = myArgs[1];
+      console.log(`Saving book ${id} to reading list`);
+      saveCmd(id);
       break;
     case "help":
       console.log("set up the help function");
