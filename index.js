@@ -1,5 +1,7 @@
 import searchCmd from "./commands/search.js";
 import saveCmd from "./commands/save.js";
+import helpCmd from "./commands/help.js";
+// import viewCmd from "./commands/view.js";
 
 const libraryDirectory = () => {
   const myArgs = process.argv.slice(2);
@@ -18,8 +20,10 @@ const libraryDirectory = () => {
       console.log(`Saving book ${id} to reading list`);
       saveCmd(id);
       break;
+    case "view":
+      console.log("add code to view reading list");
     case "help":
-      console.log("set up the help function");
+      helpCmd();
       break;
     default:
       console.error(
