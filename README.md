@@ -9,7 +9,15 @@ How to run:
 - clone this repo
 - go into the reading_list directory: `cd reading_list`
 - `npm install -g .`
-- `my-library`
+
+Commands:
+
+- `my-library help`: display command list
+- `my-library search [keyword]`: search Google Books API for 5 books relating to
+  the queried keyword
+- `my-library save [book ID]`: save a book to your reading list by ID. IDs can
+  be found in the details returned from a search
+- `my-library view`: view all books saved to reading list
 
 # Application Objectives
 

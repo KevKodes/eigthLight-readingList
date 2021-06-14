@@ -5,7 +5,6 @@ import helpCmd from "./commands/help.js";
 
 const libraryDirectory = () => {
   const myArgs = process.argv.slice(2);
-  // console.log("myArgs: ", myArgs);
 
   let command = myArgs[0] || "help";
 
