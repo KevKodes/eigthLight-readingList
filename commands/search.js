@@ -7,9 +7,10 @@ const searchCmd = async (keyword) => {
     const returnList = await axios.get(searchURL);
     returnList.data.items.forEach((book) => {
       console.log(`
-      Author(s): ${book.volumeInfo.authors}
       Title: ${book.volumeInfo.title}
+      Author(s): ${book.volumeInfo.authors}
       Publisher: ${book.volumeInfo.publisher}
+      ID: ${book.id}
       `);
     });
     return returnList;
