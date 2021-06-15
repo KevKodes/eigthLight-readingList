@@ -5,11 +5,12 @@ import searchCmd from "../commands/search.js";
 // Search command should get 5 items relating to the query and console.log their
 //  title, author, and publisher
 describe("Search Command", async function () {
-  const query = await searchCmd("dogs");
+  // const query = await searchCmd("dogs");
 
-  it("should return a list of 5 books", function () {
+  it("should return a list of 5 books", async function () {
     let resultLength = 5;
-
+    const query = await searchCmd("dogs");
+    console.log(query.length);
     assert.strictEqual(query.length, resultLength);
   });
 
