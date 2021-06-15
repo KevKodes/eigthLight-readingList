@@ -9,6 +9,7 @@ How to run:
 - clone this repo
 - go into the reading_list directory: `cd reading_list`
 - `npm install -g .`
+- run tests: `npm test`
 
 Commands:
 
@@ -28,15 +29,23 @@ Commands:
 
 # Dependencies
 
-### Axios
+## Axios
 
 This library is used since the ES6 built-in Fetch API is not implemented in node.js.
 The Axios package is used to both make the get request and parse the response
 from JSON.
 
-# Lessons
+## Mocha
 
-### Software Versions
+Testing framework.
+
+## Mocha-suppress-logs
+
+Used to suppress the console logs when running unit tests.
+
+# Obstacles
+
+## Software Versions
 
 When I first started out, I was running an old version of node.js. I found that
 I could not use ES6 module syntax with the version I was running and went down
