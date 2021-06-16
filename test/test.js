@@ -19,6 +19,10 @@ describe("Save Command", function () {
   it("Should save the book to the reading-list", async function () {
     const savedBook = `Title: Pet That Dog!\nAuthor(s): Gideon Kidd,Rachel Braunigan\nPublisher: Quirk Books\nID: HznMDwAAQBAJ`;
     await saveCmd("HznMDwAAQBAJ");
+    let save = "";
+    await fs.readFile("reading_list.txt", "utf8", (err, list) => {
+      if (!err) save = list;
+    });
     assert.strictEqual(savedBook, save);
   });
 });
