@@ -6,9 +6,18 @@
 
 How to run:
 
-- clone this repo
-- go into the reading_list directory: `cd reading_list`
-- `npm install -g .`
+1. clone this repo
+2. go into the reading_list directory:
+
+```
+cd reading_list
+```
+
+3. Install
+
+```
+npm install -g .
+```
 
 Commands:
 
@@ -19,6 +28,13 @@ Commands:
   be found in the details returned from a search
 - `my-library view`: view all books saved to reading list
 
+Testing:
+Run tests from the main directory with
+
+```
+npm test
+```
+
 # Application Objectives
 
 - Type in a query and display a list of 5 books matching that query.
@@ -28,15 +44,27 @@ Commands:
 
 # Dependencies
 
-### Axios
+## Axios
 
 This library is used since the ES6 built-in Fetch API is not implemented in node.js.
 The Axios package is used to both make the get request and parse the response
 from JSON.
 
-# Lessons
+## Mocha
 
-### Software Versions
+Testing framework.
+
+## Chai
+
+Pairs with Mocha for unit tests.
+
+## Mocha-suppress-logs
+
+Used to suppress the console logs when running unit tests.
+
+# Obstacles
+
+## Software Versions
 
 When I first started out, I was running an old version of node.js. I found that
 I could not use ES6 module syntax with the version I was running and went down

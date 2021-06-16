@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require mocha-suppress-logs"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/KevKodes/eigthLight-readingList#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.0",
+    "mocha-suppress-logs": "^0.3.1"
   }
 }
