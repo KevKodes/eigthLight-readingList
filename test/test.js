@@ -16,16 +16,9 @@ describe("Search Command", function () {
 
 // Save command should append the book to the text file
 describe("Save Command", function () {
-  // before(function (done) {
-  //   saveCmd("HznMDwAAQBAJ");
-  //   done();
-  // });
   before(() => saveCmd("HznMDwAAQBAJ"));
-  // describe("command test", function () {
   it("Should save the book to the reading-list", function () {
-    // await saveCmd("HznMDwAAQBAJ");
     const save = fs.readFileSync("reading_list.txt").toString();
     expect(save).to.contain("HznMDwAAQBAJ");
   });
-  // });
 });
