@@ -1,10 +1,10 @@
 const helpCmd = () => {
   console.log(`
   Commands:
-  search [keyword]
-  save [book ID]
-  view
-  help
+  - search [keyword]
+  - save [book ID]
+  - view
+  - help
   `);
 };
 
