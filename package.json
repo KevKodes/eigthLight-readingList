@@ -1,11 +1,12 @@
 {
   "name": "reading_list",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "8th Light Coding Challenge",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --require mocha-suppress-logs"
+    "test": "mocha --require mocha-suppress-logs",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
