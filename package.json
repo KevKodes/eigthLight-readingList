@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --require mocha-suppress-logs"
+    "test": "mocha --require mocha-suppress-logs",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
