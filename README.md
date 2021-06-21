@@ -10,13 +10,13 @@ How to run:
 2. go into the reading_list directory:
 
 ```
-cd reading_list
+cd eigthLight-readingList
 ```
 
 3. Install
 
 ```
-npm install -g .
+npm install
 ```
 
 Commands:
