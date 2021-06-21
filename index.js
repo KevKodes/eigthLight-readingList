@@ -7,18 +7,35 @@ import readline from "readline";
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-  prompt: "OHAI> ",
+  prompt: "reading_list> ",
 });
 
 rl.prompt();
 
 rl.on("line", (line) => {
-  switch (line.trim()) {
-    case "hello":
-      console.log("world!");
+  const userInput = line.trim().split(" ");
+  let command = userInput[0] || "help";
+
+  switch (command) {
+    case "search":
+      const keyword = userInput[1];
+      searchCmd(keyword);
       break;
+    case "save":
+      const id = userInput[1];
+      saveCmd(id);
+      break;
+    case "view":
+      viewCmd();
+      break;
+    case "help":
+      helpCmd();
+      break;
+    case "exit":
+      console.log("Have a great day!");
+      process.exit(0);
     default:
-      console.log(`Say what? I might have heard '${line.trim()}'`);
+      console.error(`Command not found. Enter "help" for more information`);
       break;
   }
   rl.prompt();
