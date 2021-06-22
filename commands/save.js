@@ -1,5 +1,5 @@
 import fs from "fs";
-import getBooks from "../utils/externalAPI";
+import getBooks from "../utils/externalAPI.js";
 
 const saveBookCB = (err) => {
   if (err) {
@@ -11,7 +11,7 @@ const saveCmd = async (bookId) => {
   console.log(`Saving book ${bookId} to reading list`);
 
   try {
-    const book = getBooks("save");
+    const book = await getBooks("save");
     // const bookURL = `https://www.googleapis.com/books/v1/volumes/${bookId}`;
     // const book = await axios.get(bookURL);
     const bookData = `Title: ${book.data.volumeInfo.title}\nAuthor(s): ${book.data.volumeInfo.authors}\nPublisher: ${book.data.volumeInfo.publisher}\nID: ${book.data.id}`;

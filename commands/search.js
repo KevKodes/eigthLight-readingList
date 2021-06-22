@@ -1,11 +1,11 @@
-import axios from "axios";
-import getBooks from "../utils/externalAPI";
+// import axios from "axios";
+import getBooks from "../utils/externalAPI.js";
 
 const searchCmd = async (keyword) => {
   console.log("Searching library for keyword: ", keyword);
 
   try {
-    const returnList = getBooks("search", keyword);
+    const returnList = await getBooks("search", keyword);
     // const searchURL = `https://www.googleapis.com/books/v1/volumes?q=${keyword}&maxResults=5`;
     // const returnList = await axios.get(searchURL);
     const books = returnList.data.items;
