@@ -2,38 +2,46 @@
 
 ## Command Line App - Kevin Pitzer
 
+&nbsp;
+
 # Instructions
 
-How to run:
+## How to run:
+
+\*\* This app was built using node version 16.3.0
 
 1. clone this repo
-2. go into the reading_list directory:
-
-```
-cd eigthLight-readingList
-```
-
+2. cd into the new directory:
 3. Install
 
 ```
+git clone https://github.com/KevKodes/eigthLight-readingList
+cd eigthLight-readingList
 npm install
 ```
 
-Commands:
+## Commands:
 
-- `my-library help`: display command list
-- `my-library search [keyword]`: search Google Books API for 5 books relating to
+- `help`: display command list
+- `search [keyword]`: search Google Books API for 5 books relating to
   the queried keyword
-- `my-library save [book ID]`: save a book to your reading list by ID. IDs can
+- `save [book ID]`: save a book to your reading list by ID. IDs can
   be found in the details returned from a search
-- `my-library view`: view all books saved to reading list
+- `view`: view all books saved to reading list
 
-Testing:
+## Testing:
+
 Run tests from the main directory with
 
 ```
 npm test
 ```
+
+\*\* Some tests are still under development. The tests of general functionality
+should incorporate the use of mock functions to fake user input in readline
+and spy on the command functions to ensure the correct ones are called.
+
+&nbsp;
 
 # Application Objectives
 
@@ -41,6 +49,8 @@ npm test
 - Each item in the list should include the book's author, title, and publishing company.
 - A user should be able to select a book from the five displayed to save to a “Reading List”
 - View a “Reading List” with all the books the user has selected from their queries -- this is a local reading list and not tied to Google Books’s account features.
+
+&nbsp;
 
 # Dependencies
 
@@ -61,6 +71,8 @@ Pairs with Mocha for unit tests.
 ## Mocha-suppress-logs
 
 Used to suppress the console logs when running unit tests.
+
+&nbsp;
 
 # Obstacles
 
