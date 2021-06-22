@@ -22,3 +22,5 @@ describe("Save Command", function () {
     expect(save).to.contain("HznMDwAAQBAJ");
   });
 });
+
+// Each command should launch it's own function
