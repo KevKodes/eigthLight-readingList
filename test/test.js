@@ -6,6 +6,7 @@ import searchCmd from "../commands/search.js";
 import saveCmd from "../commands/save.js";
 import fs, { read } from "fs";
 import readline from "readline";
+import readlineCb from "../index.js";
 import helpCmd from "../commands/help.js";
 
 // Search command should get 5 items relating to the query
@@ -28,6 +29,9 @@ describe("Search Command", function () {
 
 // Each command should launch it's own function
 describe("General functionality", function () {
+  // const mockInterface = { input: "help" };
+  // const rl = readline.createInterface(mockInterface);
+
   it("Should call the help function when the user enters help", function () {
     const spied = sinon.spy(helpCmd);
     spied(); // change this to the user calling from readline

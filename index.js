@@ -12,7 +12,12 @@ const rl = readline.createInterface({
 
 rl.prompt();
 
-rl.on("line", async (line) => {
+rl.on("line", readlineCb).on("close", () => {
+  console.log("Have a great day!");
+  process.exit(0);
+});
+
+const readlineCb = async (line) => {
   const userInput = line.trim().split(" ");
   let command = userInput[0] || "help";
 
@@ -39,36 +44,6 @@ rl.on("line", async (line) => {
       break;
   }
   rl.prompt();
-}).on("close", () => {
-  console.log("Have a great day!");
-  process.exit(0);
-});
-
-const libraryDirectory = () => {
-  const myArgs = process.argv.slice(2);
-
-  let command = myArgs[0] || "help";
-
-  switch (command) {
-    case "search":
-      const keyword = myArgs[1];
-      searchCmd(keyword);
-      break;
-    case "save":
-      const id = myArgs[1];
-      saveCmd(id);
-      break;
-    case "view":
-      viewCmd();
-      break;
-    case "help":
-      helpCmd();
-      break;
-    default:
-      console.error(
-        'Command not found. Enter "my-library help" for more information'
-      );
-  }
 };
 
-export default libraryDirectory;
+export default readlineCb;
