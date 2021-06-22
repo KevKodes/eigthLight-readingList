@@ -5,7 +5,7 @@ const viewCmd = async () => {
     const file = fs.readFileSync("reading_list.txt").toString();
     if (!file) {
       console.log(
-        "Your reading list is empty. Save books with `my-library save [book ID]`."
+        "Your reading list is empty. Save books with `save [book ID]`."
       );
     } else {
       console.log("Your saved books are: ", file);

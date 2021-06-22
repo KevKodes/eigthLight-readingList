@@ -27,7 +27,11 @@ rl.on("line", async (line) => {
       break;
     case "save":
       const id = userInput[1];
-      await saveCmd(id);
+      if (!id) {
+        console.log("Incorrect save syntax. Missing book id.");
+      } else {
+        await saveCmd(id);
+      }
       break;
     case "view":
       await viewCmd();
