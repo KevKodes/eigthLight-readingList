@@ -21,12 +21,12 @@ npm install
 
 Commands:
 
-- `my-library help`: display command list
-- `my-library search [keyword]`: search Google Books API for 5 books relating to
+- `help`: display command list
+- `search [keyword]`: search Google Books API for 5 books relating to
   the queried keyword
-- `my-library save [book ID]`: save a book to your reading list by ID. IDs can
+- `save [book ID]`: save a book to your reading list by ID. IDs can
   be found in the details returned from a search
-- `my-library view`: view all books saved to reading list
+- `view`: view all books saved to reading list
 
 Testing:
 Run tests from the main directory with
@@ -34,6 +34,10 @@ Run tests from the main directory with
 ```
 npm test
 ```
+
+- Some tests are still under development. The tests of general functionality
+  should incorporate the use of mock functions to fake user input in readline
+  and spy on the command functions to ensure the correct ones are called.
 
 # Application Objectives
 
