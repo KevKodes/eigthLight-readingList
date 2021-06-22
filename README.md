@@ -2,6 +2,8 @@
 
 ## Command Line App - Kevin Pitzer
 
+&nbsp;
+
 # Instructions
 
 How to run:
@@ -29,6 +31,7 @@ Commands:
 - `view`: view all books saved to reading list
 
 Testing:
+
 Run tests from the main directory with
 
 ```
@@ -39,12 +42,16 @@ npm test
   should incorporate the use of mock functions to fake user input in readline
   and spy on the command functions to ensure the correct ones are called.
 
+&nbsp;
+
 # Application Objectives
 
 - Type in a query and display a list of 5 books matching that query.
 - Each item in the list should include the book's author, title, and publishing company.
 - A user should be able to select a book from the five displayed to save to a “Reading List”
 - View a “Reading List” with all the books the user has selected from their queries -- this is a local reading list and not tied to Google Books’s account features.
+
+&nbsp;
 
 # Dependencies
 
@@ -65,6 +72,8 @@ Pairs with Mocha for unit tests.
 ## Mocha-suppress-logs
 
 Used to suppress the console logs when running unit tests.
+
+&nbsp;
 
 # Obstacles
 
