@@ -5,6 +5,7 @@ const helpCmd = () => {
   - save [book ID]
   - view
   - help
+  - exit
   `);
 };
 

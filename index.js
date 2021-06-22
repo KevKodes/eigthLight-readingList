@@ -20,7 +20,7 @@ rl.on("line", async (line) => {
     case "search":
       const keyword = userInput[1];
       if (!keyword) {
-        console.log("Incorrect search syntax");
+        console.log("Incorrect search syntax. Missing keyword.");
       } else {
         await searchCmd(keyword);
       }
