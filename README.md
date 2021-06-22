@@ -13,11 +13,13 @@
 1. clone this repo
 2. cd into the new directory:
 3. Install
+4. Start the application
 
 ```
 git clone https://github.com/KevKodes/eigthLight-readingList
 cd eigthLight-readingList
 npm install
+npm start
 ```
 
 ## Commands:
@@ -28,6 +30,7 @@ npm install
 - `save [book ID]`: save a book to your reading list by ID. IDs can
   be found in the details returned from a search
 - `view`: view all books saved to reading list
+- `exit`: exit the application
 
 ## Testing:
 
