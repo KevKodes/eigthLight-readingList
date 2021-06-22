@@ -12,12 +12,7 @@ const rl = readline.createInterface({
 
 rl.prompt();
 
-rl.on("line", readlineCb).on("close", () => {
-  console.log("Have a great day!");
-  process.exit(0);
-});
-
-const readlineCb = async (line) => {
+rl.on("line", async (line) => {
   const userInput = line.trim().split(" ");
   let command = userInput[0] || "help";
 
@@ -44,6 +39,7 @@ const readlineCb = async (line) => {
       break;
   }
   rl.prompt();
-};
-
-export default readlineCb;
+}).on("close", () => {
+  console.log("Have a great day!");
+  process.exit(0);
+});
