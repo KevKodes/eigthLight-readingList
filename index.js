@@ -19,11 +19,19 @@ rl.on("line", async (line) => {
   switch (command) {
     case "search":
       const keyword = userInput[1];
-      await searchCmd(keyword);
+      if (!keyword) {
+        console.log("Incorrect search syntax. Missing keyword.");
+      } else {
+        await searchCmd(keyword);
+      }
       break;
     case "save":
       const id = userInput[1];
-      await saveCmd(id);
+      if (!id) {
+        console.log("Incorrect save syntax. Missing book id.");
+      } else {
+        await saveCmd(id);
+      }
       break;
     case "view":
       await viewCmd();
