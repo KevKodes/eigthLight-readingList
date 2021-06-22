@@ -6,22 +6,21 @@
 
 # Instructions
 
-How to run:
+## How to run:
+
+\*\* This app was built using node version 16.3.0
 
 1. clone this repo
-2. go into the reading_list directory:
-
-```
-cd eigthLight-readingList
-```
-
+2. cd into the new directory:
 3. Install
 
 ```
+git clone https://github.com/KevKodes/eigthLight-readingList
+cd eigthLight-readingList
 npm install
 ```
 
-Commands:
+## Commands:
 
 - `help`: display command list
 - `search [keyword]`: search Google Books API for 5 books relating to
@@ -30,7 +29,7 @@ Commands:
   be found in the details returned from a search
 - `view`: view all books saved to reading list
 
-Testing:
+## Testing:
 
 Run tests from the main directory with
 
@@ -38,9 +37,9 @@ Run tests from the main directory with
 npm test
 ```
 
-- Some tests are still under development. The tests of general functionality
-  should incorporate the use of mock functions to fake user input in readline
-  and spy on the command functions to ensure the correct ones are called.
+\*\* Some tests are still under development. The tests of general functionality
+should incorporate the use of mock functions to fake user input in readline
+and spy on the command functions to ensure the correct ones are called.
 
 &nbsp;
 
