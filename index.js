@@ -19,7 +19,11 @@ rl.on("line", async (line) => {
   switch (command) {
     case "search":
       const keyword = userInput[1];
-      await searchCmd(keyword);
+      if (!keyword) {
+        console.log("Incorrect search syntax");
+      } else {
+        await searchCmd(keyword);
+      }
       break;
     case "save":
       const id = userInput[1];
