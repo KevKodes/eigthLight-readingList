@@ -1,5 +1,7 @@
 import assert, { doesNotMatch } from "assert";
 import { expect } from "chai";
+import sinon from "sinon";
+// import sinon from "./node_modules/sinon/pkg/sinon-esm.js";
 import searchCmd from "../commands/search.js";
 import saveCmd from "../commands/save.js";
 import fs, { read } from "fs";
